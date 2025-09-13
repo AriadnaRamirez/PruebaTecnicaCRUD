@@ -74,7 +74,9 @@ export const useProductsStore = create<ProductState>((set) => ({
 			const newProduct = await res.json();
 
 			// Aqui actualizo el array de productos para verlo reflejado en el front
-			set((state) => ({ products: [...state.products, newProduct] }));
+			 set((state) => ({
+      products: [...state.products, { ...product, id: newProduct.id }],
+    }));;
 		} catch (error) {
 			console.error("addProduct error:", error);
 		}

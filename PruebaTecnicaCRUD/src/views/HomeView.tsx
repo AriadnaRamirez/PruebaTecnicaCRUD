@@ -24,12 +24,7 @@ export default function HomeView() {
           Ver productos
         </a>
 
-        <a
-          href="/create"
-          className="px-6 py-3 border-2 border-indigo-900 text-indigo-900 rounded-lg shadow-md hover:bg-indigo-900 hover:text-white transition"
-        >
-          Agregar producto
-        </a>
+       
       </div>
     </section>
   );
